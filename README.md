@@ -1,5 +1,7 @@
 # React YouTube Clone
 
+**[🌐 Live Demo](https://okj203-react-youtube-clone.netlify.app/)**
+
 A single-page application (SPA) built with React, implementing core functionalities of YouTube using the official [YouTube Data API v3](https://developers.google.com/youtube/v3).
 
 ## 1. Overview
