@@ -138,6 +138,8 @@ export default function SearchHeader() {
 
 ### 4.3 UX/UI
 
+![react-youtube-responsive-demo](./imgs/react-youtube-responsive-demo.gif)
+
 - **Fully Responsive UI**: Layout dynamically adjusts for various screen sizes.
 - **Persistent Search Bar**: Always-visible search bar allows for seamless keyword-based search across the entire app.
 - **Scroll-to-Top on Navigation**: Improves UX by mimicking native page transitions in an SPA.
