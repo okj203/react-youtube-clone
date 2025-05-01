@@ -145,6 +145,7 @@ export default function SearchHeader() {
 - **Fully Responsive UI**: Layout dynamically adjusts for various screen sizes.
 - **Persistent Search Bar**: Always-visible search bar allows for seamless keyword-based search across the entire app.
 - **Scroll-to-Top on Navigation**: Improves UX by mimicking native page transitions in an SPA.
+- **Consistent Dark Mode Setting**: Stored in localStorage to keep the theme consistent across sessions.
 
 ## 5. Implementation Notes & Technical Challenges
 
