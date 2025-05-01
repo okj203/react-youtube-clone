@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import { BsYoutube, BsSearch } from 'react-icons/bs';
 import { useDarkMode } from '../context/DarkModeContext';
 import { HiMoon, HiSun } from 'react-icons/hi';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function SearchHeader() {
   const { darkMode, toggleDarkMode } = useDarkMode();
@@ -36,9 +37,20 @@ export default function SearchHeader() {
           <BsSearch />
         </button>
       </form>
-      <button className="text-[2.5rem] bg-transparent dark:text-white mr-4 transition-all duration-150 ease-out hover:scale-[1.3] hover:text-yellow-400 dark:hover:text-orange-400" onClick={toggleDarkMode}>
-        {darkMode ? <HiSun /> : <HiMoon />}
-      </button>
+      <div className='flex justify-center items-center gap-4 text-[2rem] bg-transparent dark:text-white mr-4'>
+        <button
+          className="transition-all duration-150 ease-out hover:scale-[1.3] hover:text-yellow-400 dark:hover:text-orange-400"
+          onClick={toggleDarkMode}
+        >
+          {darkMode ? <HiSun /> : <HiMoon />}
+        </button>
+        <Link to="https://github.com/okj203/react-youtube-clone?tab=readme-ov-file#react-youtube-clone">
+          <FaGithub className='transition-all duration-150 ease-out hover:scale-[1.3] hover:text-gray-500'/>
+        </Link>
+        <Link to="https://www.linkedin.com/in/cathy-ock-kyung-jung-18a66296/">
+          <FaLinkedin className='transition-all duration-150 ease-out hover:scale-[1.3] hover:text-blue-600'/>
+        </Link>
+      </div>
     </header>
   );
 }
