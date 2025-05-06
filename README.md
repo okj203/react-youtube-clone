@@ -1,6 +1,6 @@
 # React YouTube Clone
 
-[**🌐 Live Demo**](https://okj203-react-youtube-clone.netlify.app/)
+🌐 [**Live Demo**](https://okj203-react-youtube-clone.netlify.app/)
 
 A single-page application (SPA) built with React, implementing core functionalities of YouTube using the official [YouTube Data API v3](https://developers.google.com/youtube/v3).
 
@@ -166,7 +166,7 @@ Additionally, handling of `/search` and `/videos` responses required careful par
 ## 6. CI/CD
 This project uses Netlify for automated continuous integration and deployment. Every push to the main branch (or a specified branch) automatically triggers Netlify to build and deploy the latest version.
 
-[**🚀 Netlify Deployment Status**](https://app.netlify.com/sites/okj203-react-youtube-clone/deploys)
+🚀 [**Netlify Deployment Status**](https://app.netlify.com/sites/okj203-react-youtube-clone/deploys)
 
 ## 7. Running the App
 
