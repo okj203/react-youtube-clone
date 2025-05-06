@@ -1,6 +1,6 @@
 # React YouTube Clone
 
-**[🌐 Live Demo](https://okj203-react-youtube-clone.netlify.app/)**
+[**🌐 Live Demo**](https://okj203-react-youtube-clone.netlify.app/)
 
 A single-page application (SPA) built with React, implementing core functionalities of YouTube using the official [YouTube Data API v3](https://developers.google.com/youtube/v3).
 
@@ -12,18 +12,15 @@ This minimalist YouTube clone features a landing page with trending videos, keyw
 
 ## 2. Tech Stack
 
-- **React**: Bootstrapped with [`create-react-app` and `yarn`](https://github.com/facebook/create-react-app?tab=readme-ov-file#yarn). Utilizes React Context API with a custom `useYoutubeApiContext` hook for shared state management.
-- **React Router**: Implements [SPA-style routing using `react-router-dom`](./src/index.js), featuring a [persistent search bar](./src/components/SearchHeader.jsx).
-
-  - `/` and `/videos`: Render `Videos` component with a list of trending videos.
-  - `/videos/:keyword`: Renders `Videos` component showing videos matching the search query.
-  - `/videos/watch/:videoId`: Renders `VideoDetail` component with embedded video playback and related videos.
-
-- **React Query ([@tanstack/react-query](https://tanstack.com/query/latest/docs/framework/react/installation#npm))**: Handles asynchronous API requests, caching, and synchronization with the server state.
-- [**Axios**](https://classic.yarnpkg.com/en/package/axios): API request abstraction layer.
-- [**Tailwind CSS**](https://classic.yarnpkg.com/en/package/tailwindcss): Utility-first CSS framework used directly within JSX for responsive design.
-- [**timeago.js**](https://www.npmjs.com/package/timeago.js/v/4.0.0-beta.3#case): Converts ISO date strings into relative time format (e.g., "2 days ago").
-- [**React Icons**](https://react-icons.github.io/react-icons/icons/bs/): Provides scalable vector icons, including the YouTube logo.
+| Technology       | Description     |
+| ---------------- | --------------- |
+| **React**        | Bootstrapped with [`create-react-app` and `yarn`](https://github.com/facebook/create-react-app?tab=readme-ov-file#yarn). Uses Context API with a custom `useYoutubeApiContext` hook for shared state management. |
+| **React Router** | [SPA-style routing using `react-router-dom`](./src/index.js), featuring a [persistent search bar](./src/components/SearchHeader.jsx).<br>Routes:<br>• `/` & `/videos`: Render `Videos` component with a list of trending videos.<br>• `/videos/:keyword`: Renders `Videos` component showing videos matching the search query.<br>• `/videos/watch/:videoId`: Renders `VideoDetail` component with embedded video playback and related videos. |
+| **React Query**  | [@tanstack/react-query](https://tanstack.com/query/latest/docs/framework/react/installation#npm) for asynchronous API requests, caching, and synchronization with the server state. |
+| **Axios**        | [Axios](https://classic.yarnpkg.com/en/package/axios) as the API request abstraction layer. |
+| **Tailwind CSS** | [Tailwind](https://classic.yarnpkg.com/en/package/tailwindcss) for utility-first styling directly in JSX. |
+| **timeago.js**   | [timeago.js](https://www.npmjs.com/package/timeago.js/v/4.0.0-beta.3#case) for converting ISO date strings into relative time format (e.g., "2 days ago"). |
+| **React Icons**  | [React Icons](https://react-icons.github.io/react-icons/icons/bs/) for scalable vector icons including YouTube logo. |
 
 ## 3. Project Structure
 
@@ -166,7 +163,12 @@ Initially, the plan was to fetch related videos using `relatedToVideoId`, but [t
 
 Additionally, handling of `/search` and `/videos` responses required careful parsing due to differing response formats.
 
-## 6. Running the App
+## 6. CI/CD
+This project uses Netlify for automated continuous integration and deployment. Every push to the main branch (or a specified branch) automatically triggers Netlify to build and deploy the latest version.
+
+[**🚀 Netlify Deployment Status**](https://app.netlify.com/sites/okj203-react-youtube-clone/deploys)
+
+## 7. Running the App
 
 1. **Clone the repository:**
 
@@ -217,7 +219,7 @@ Additionally, handling of `/search` and `/videos` responses required careful par
    yarn start
    ```
 
-## 7. Known Warnings
+## 8. Known Warnings
 
 - **ESLint Warning**: Unused `YoutubeClient` or `FakeYoutubeClient` import. This is intentional to facilitate quick switching between data modes and can be safely ignored.
 - **Source Map Warning**: May occur due to `timeago.js`. This has no functional impact. To suppress:
@@ -225,7 +227,7 @@ Additionally, handling of `/search` and `/videos` responses required careful par
   GENERATE_SOURCEMAP=false
   ```
 
-## 8. Contribution
+## 9. Contribution
 
 If you find a bug or have a suggestion for improvement, feel free to open an issue or submit a pull request.
 
